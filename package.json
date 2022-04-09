@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://shigaresso.github.io/portfolio-html/",
+  "homepage": "https://shigaresso.github.io/portfolio-react/",
   "eslintConfig": {
     "extends": [
       "react-app",
