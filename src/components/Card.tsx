@@ -2,8 +2,8 @@ import "../Card.scss";
 import GitHubImage from "../GitHub-Mark-32px.png"
 
 type card = {
-    title: string
-    text: string
+    projectName: string
+    heading: string
     gitHubLink?: string
 }
 
@@ -12,8 +12,8 @@ export const Card = (props: card) => {
         <div className="card">
             <div className="card__body">
                 <img src="" />
-                <h2 className="card__title">{props.title}</h2>
-                <p className="card__text">{props.text}</p>
+                <h2 className="card__projectName">{props.projectName}</h2>
+                <p className="card__heading">{props.heading}</p>
             </div>
             <div className="card__detail">
                 <button className="card__detail__button">プロジェクトの内容</button>
