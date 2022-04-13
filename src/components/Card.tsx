@@ -1,11 +1,7 @@
 import "../Card.scss";
 import GitHubImage from "../GitHub-Mark-32px.png"
+import { card } from "../data";
 
-type card = {
-    projectName: string
-    heading: string
-    gitHubLink?: string
-}
 
 export const Card = (props: card) => {
     return (
