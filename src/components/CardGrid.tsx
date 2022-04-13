@@ -1,4 +1,4 @@
-import { card, datas } from "../data"
+import { card, datas, firstSearchText } from "../data"
 import { Card } from "./Card"
 import "../CardGrid.scss"
 
@@ -8,7 +8,7 @@ type cardGrid = {
 
 export const CardGrid = ({filterText}: cardGrid) => {
     // 表示するリポジトリのフィルタ機能
-    const cardNodes: card[] = filterText ? datas.filter(
+    const cardNodes: card[] = filterText != firstSearchText ? datas.filter(
         (data) => {
             // langages 配列で props.filterText 要素を持つもののみ要素として返す
             return data.languages.includes(filterText)
