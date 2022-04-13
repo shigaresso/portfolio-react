@@ -1,7 +1,11 @@
-export const SearchCardBox = (props: any) => {
+type searchCardBox = {
+  setFilterText: React.Dispatch<React.SetStateAction<string>>,
+}
+
+export const SearchCardBox = ({setFilterText}: searchCardBox) => {
 
     return (
-        <select onChange={(e) => props.setFilterText((prev: string) => prev = e.target.value)}>
+        <select onChange={(e) => setFilterText((prev: string) => prev = e.target.value)}>
           <option value="">利用言語フィルター</option>
           <option value="JavaScript">JavaScript</option>
           <option value="Python">Python</option>

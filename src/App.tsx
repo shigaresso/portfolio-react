@@ -6,8 +6,7 @@ import './App.scss';
 function App() {
   // ポートフォリオのグリッドで表示するリポジトリのフィルター用変数
   const [filterText, setFilterText] = useState("")
-  console.log(`${filterText} を選択しました`)
-  
+
   return (
     <div className="App">
  

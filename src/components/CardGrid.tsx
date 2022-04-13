@@ -2,11 +2,16 @@ import { card, datas } from "../data"
 import { Card } from "./Card"
 import "../CardGrid.scss"
 
-export const CardGrid = (props: any) => {
+type cardGrid = {
+    filterText: string,
+}
+
+export const CardGrid = ({filterText}: cardGrid) => {
     // 表示するリポジトリのフィルタ機能
-    const cardNodes: card[] = props.textFilter ? datas.filter(
+    const cardNodes: card[] = filterText ? datas.filter(
         (data) => {
-            return data.languages.includes(props.textFilter)
+            // langages 配列で props.filterText 要素を持つもののみ要素として返す
+            return data.languages.includes(filterText)
         }
     ) : datas
 
