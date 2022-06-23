@@ -53,7 +53,7 @@ export const datas: card[] = [
         projectName: "OPENREC のコメント保存プログラム",
         heading: "OPENREC の配信アーカイブから過去コメントを CSV 形式で保存します",
         content: {
-            using: "aaaaa",
+            using: "変更してみました",
             learningContent: "b",
             improvement: "c",
         },
