@@ -54,7 +54,7 @@ export const datas: card[] = [
         heading: "OPENREC の配信アーカイブから過去コメントを CSV 形式で保存します",
         content: {
             using: "変更してみました",
-            learningContent: "b",
+            learningContent: "正しく変更できていますか？",
             improvement: "c",
         },
         gitHubLink: "https://github.com/shigaresso/get-openrec-archive-comment",
