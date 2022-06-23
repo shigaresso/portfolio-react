@@ -18,7 +18,7 @@ export const CardGrid = ({filterText}: cardGrid) => {
     return (
         <div className="CardGrid">
             {cardNodes.map((data) =>
-                <Card key={data.projectName} projectName={data.projectName} heading={data.heading} gitHubLink={data.gitHubLink} languages={data.languages} />
+                <Card key={data.projectName} projectName={data.projectName} heading={data.heading} gitHubLink={data.gitHubLink} languages={data.languages} content={data.content} />
             )}
         </div>
     )

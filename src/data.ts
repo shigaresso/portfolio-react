@@ -1,7 +1,7 @@
 export type card = {
     projectName: string
     heading: string
-    content?: {
+    content: {
         using: string
         learningContent: string
         improvement: string
